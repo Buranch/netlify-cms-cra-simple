@@ -16,7 +16,7 @@
   "scripts": {
     "start": "npm run prepare-json && npm run start:app",
     "start:app": "react-scripts start",
-    "build": "npm run prepare-content && npm run build:app",
+    "build": "npm run prepare-json && npm run build:app",
     "build:app": "react-scripts build",
     "test": "react-scripts test",
     "prepare-json": "node functions/parse-content.js",
