@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import data from './data.json';
 import './App.css';
 
+console.log('data json ', data);
 class App extends Component {
   render() {
     return (
