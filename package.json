@@ -14,10 +14,12 @@
     "js-yaml": "^3.13.1"
   },
   "scripts": {
-    "start": "node functions/parse-content.js && npm run start:app",
+    "start": "npm run prepare-json && npm run start:app",
     "start:app": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run prepare-content && npm run build:app",
+    "build:app": "react-scripts build",
     "test": "react-scripts test",
+    "prepare-json": "node functions/parse-content.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
